@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="description" content="Web Content">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="author">
+        <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="content-script-type" content="text/javascript">
+        <meta http-equiv="x-dns-prefetch-control" content="on">
+        
+        <!--  <link rel="apple-touch-icon" sizes="180x180" href="assests/images/fav_icon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assests/images/fav_icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assests/images/fav_icon.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assests/images/fav_icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assests/images/fav_icon.png"> -->
+        <!-- font family  -->
+        <link rel="stylesheet" href="assests/font/stylesheet.css">
+        <!-- slick slider css cdn link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- Custom css -->
+        <link rel="stylesheet" href="assests/css/style.css">
+        <!-- Responsive midea css -->
+        <link rel="stylesheet" href="assests/css/responsive.css">
+        <title>Website title</title>
+    </head>
+    <body>
+        <!-- header start -->
+        <header class="fixed-top">
+            <div class="container">
+                <div class="header-inner d-flex justify-content-between">
+                    <div class="item-left align-self-center">
+                        <a href="#"><img src="assests/images/Logo.png" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <div class="header-right align-self-center">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assests/images/user.png" alt="img" class="img-fluid user-img">
+                            <img src="assests/images/3-dot.svg" alt="img" class="img-fluid dot3-icon">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Refer a Friend</a></li>
+                                <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- wrapper start -->
+        <div class="wrapper">
+            <!-- left side bar start -->
+            <div class="left-sidebar">
+                <ul class="main-left-menu">
+                    <li><a href="index.html" ><img src="assests/images/dashboard-fill.svg" alt="img" class="img-fluid"> <span>Dashboard</span></a></li>
+                    <li><a href="calender.html" ><img src="assests/images/calendar-fill.svg" alt="img" class="img-fluid"> <span>Calender</span></a></li>
+                    <li><a href="Deals.html" class="active"><img src="assests/images/service-fill.svg" alt="img" class="img-fluid"> <span>Deals</span></a></li>
+                    <li><a href=""><img src="assests/images/message-3-fill.svg" alt="img" class="img-fluid"> <span>Messages</span></a></li>
+                    <li><a href="Contact.html" ><img src="assests/images/contacts-book.svg" alt="img" class="img-fluid"> <span>Contacts</span></a></li>
+                    <li><a href=""><img src="assests/images/bar-chart-2.svg" alt="img" class="img-fluid"> <span>Reports</span></a></li>
+                    <li><a href=""><img src="assests/images/settings.svg" alt="img" class="img-fluid"> <span>Settings</span></a></li>
+                </ul>
+                <div class="menu-bottom">
+                    <a href=""><img src="assests/images/question.svg" alt="img" class="img-fluid"> <span>Help Center</span></a>
+                </div>
+            </div>
+            <!-- left side bar end -->
+            <!-- ==============================================
+            main content area start
+            ============================================== -->
+            <div class="main-content">
+                <!-- =============== main content start ==== -->
+                <!-- deals wrapper   start -->
+                <div class="deals-wrapper">
+                    <!-- deals top start -->
+                    <div class="deals-top d-flex justify-content-end">
+                        <div class="item1">
+                            <form>
+                                <input type="search" id="search" class="form-control" placeholder="Search">
+                                <button type="submit"><img src="assests/images/search.svg" alt="img" class="img-fluid"></button>
+                            </form>
+                        </div>
+                        <div class="item2">
+                            <ul class="d-flex">
+                                <li><button><img src="assests/images/4-squer.svg" alt="img" class="img-fluid"></button></li>
+                                <li><button><img src="assests/images/3-mid-list.svg" alt="img" class="img-fluid"></button></li>
+                            </ul>
+                        </div>
+                        <div class="item3">
+                            <button data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><img src="assests/images/add-fill.svg" alt="img" class="img-fluid"> New Deal</button>
+                        </div>
+                        <div class="item4">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Show: <strong>My Deals</strong>
+                                </button>
+                                <ul class="dropdown-menu dropstart">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- offcanvas start -->
+                    <div class="offcanvas offcanvas-wrapper offcanvas-wrapper2 offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">New Deal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form>
+                                <div class="row Deal01">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Deal Type</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Stage</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group Seller01">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Seller</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="Client0-Portal">
+                                    <h4>Client Portal</h4>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Collaborate with the Seller
+                                        </label>
+                                    </div>
+                                    <p>When selected, we’ll send the Seller an invite to the Client Portal where they can keep track of
+                                    their listing status, assigned tasks, and communication.</p>
+                                </div>
+                                <div class="form-group Team0">
+                                    <h4>Team</h4>
+                                    <label for="formGroupExampleInput" class="form-label">Listing Agent</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Mark Wood</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="form-group Prospect0-Details">
+                                    <h4>Listing Prospect Details</h4>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Address</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Address Line 1</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>City</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>State</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Zip</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group date0">
+                                    <input type="date" placeholder="Listing Presentation Date/Time" class="form-control"  required>
+                                </div>
+                                <div class="offcanvas-bottom d-flex">
+                                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+                                    <button type="reset">Reset Filter</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- offcanvas end -->
+                    <!-- deals top  end -->
+                    <!-- deals start -->
+                    <div id="deals">
+                        <!-- single item start -->
+                        <div class="deals-single-item">
+                            <h4><strong>Listing Prospect</strong> <span>$750,000</span> <a href=""><img src="assests/images/3-mid-list.svg" alt="img" class="img-fluid"></a></h4>
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box">
+                                        <span class="user1">NA</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                    
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                        </div>
+                        <!-- single item end -->
+                        <!-- single item start -->
+                        <div class="deals-single-item">
+                            <h4><strong>Upcoming Listing</strong> <span>$444,440</span></h4>
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2" style="background: #002E94;">YB</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                    
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2" style="background: #002E94;">YB</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                    
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2" style="background: #002E94;">YB</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2" style="background: #002E94;">YB</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                    
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                        </div>
+                        <!-- single item end -->
+                        <!-- single item start -->
+                        <div class="deals-single-item">
+                            <h4><strong>Active Listing</strong> <span>$0</span></h4>
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box">
+                                        <span class="user"><img src="assests/images/user3.svg" alt="img" class="img-fluid"></span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>0</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box">
+                                        <span class="user"><img src="assests/images/user3.svg" alt="img" class="img-fluid"></span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>0</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box">
+                                        <span class="user"><img src="assests/images/user3.svg" alt="img" class="img-fluid"></span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>0</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            
+                            
+                        </div>
+                        <!-- single item end -->
+                        <!-- single item start -->
+                        <div class="deals-single-item">
+                            <h4><strong>Pending</strong> <span>$444,440</span> <a href=""><img src="assests/images/3-mid-list.svg" alt="img" class="img-fluid"></a></h4>
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2" style="background: #002E94;">YB</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2 user"><img src="assests/images/user3.svg" alt="img" class="img-fluid"></span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2" style="background: #002E94;">YB</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            
+                        </div>
+                        <!-- single item end -->
+                        <!-- single item start -->
+                        <div class="deals-single-item">
+                            <h4><strong>Pending</strong> <span>$444,440</span> <a href=""><img src="assests/images/3-mid-list.svg" alt="img" class="img-fluid"></a></h4>
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2" style="background: #002E94;">YB</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2 user"><img src="assests/images/user3.svg" alt="img" class="img-fluid"></span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2" style="background: #002E94;">YB</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            
+                            
+                        </div>
+                        <!-- single item end -->
+                        <!-- single item start -->
+                        <div class="deals-single-item">
+                            <h4><strong>Pending</strong> <span>$444,440</span> <a href=""><img src="assests/images/3-mid-list.svg" alt="img" class="img-fluid"></a></h4>
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2" style="background: #002E94;">YB</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2 user"><img src="assests/images/user3.svg" alt="img" class="img-fluid"></span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            <!-- inner single item start -->
+                            <div class="inner-item">
+                                <a href="Deals-Details.html" class="media">
+                                    <span class="text-box d-flex">
+                                        <span class="user1">NA</span>
+                                        <span class="user2" style="background: #002E94;">YB</span>
+                                    </span>
+                                    <span class="media-body">
+                                        <h4>Nevine Acotanza</h4>
+                                        <p>Iris Watson P.O. Box 283 8562 Fusce Rd.Frederick Nebraska 20620</p>
+                                    </span>
+                                </a>
+                                <a href="Deals-Details.html" class="d-flex justify-content-between Listed-inner">
+                                    <span class="listed-left align-self-center">
+                                        <h6>Ashley Walsh</h6>
+                                        <p><img src="assests/images/calendar-todo.svg" alt="img" class="img-fluid"> Listed Nov 6, 2022</p>
+                                    </span>
+                                    <span class="listed-right  align-self-center">
+                                        <p class="price"><span>$750,000</span></p>
+                                    </span>
+                                </a>
+                                <div class="bar-wrapp ">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="value"><span>50%</span></div>
+                                </div>
+                            </div>
+                            <!-- inner single item end -->
+                            
+                        </div>
+                        <!-- single item end -->
+                    </div>
+                    <!-- deals end -->
+                </div>
+                <!-- deals wrapper   end -->
+                <!-- =============== main content end ==== -->
+            </div>
+            <!-- ==============================================
+            main-content area end
+            ============================================== -->
+        </div>
+        <!-- wrapper start -->
+        <!--  jQuery js-->
+        <script src="assests/js/jquery.min.js"></script>
+        <!-- bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!-- slick slider js cdn link -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- fontawesome icon -->
+        <script src="assests/fontawesome/js/all.js"></script>
+        <!-- coustom js -->
+        <script src="assests/js/script.js"></script>
+        <script>
+        const element = document.querySelector("#deals");
+        element.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        element.scrollBy({
+        left: event.deltaY < 0 ? -30 : 30,
+        });
+        });
+        </script>
+    </body>
+</html>

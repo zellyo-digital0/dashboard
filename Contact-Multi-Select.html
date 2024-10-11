@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="description" content="Web Content">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="author">
+        <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="content-script-type" content="text/javascript">
+        <meta http-equiv="x-dns-prefetch-control" content="on">
+        
+        <!--  <link rel="apple-touch-icon" sizes="180x180" href="assests/images/fav_icon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assests/images/fav_icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assests/images/fav_icon.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assests/images/fav_icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assests/images/fav_icon.png"> -->
+        <!-- font family  -->
+        <link rel="stylesheet" href="assests/font/stylesheet.css">
+        <!-- slick slider css cdn link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- Custom css -->
+        <link rel="stylesheet" href="assests/css/style.css">
+        <!-- Responsive midea css -->
+        <link rel="stylesheet" href="assests/css/responsive.css">
+        <title>Website title</title>
+    </head>
+    <body>
+        <!-- header start -->
+        <header class="fixed-top">
+            <div class="container">
+                <div class="header-inner d-flex justify-content-between">
+                    <div class="item-left align-self-center">
+                        <a href="#"><img src="assests/images/Logo.png" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <div class="header-right align-self-center">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assests/images/user.png" alt="img" class="img-fluid user-img">
+                            <img src="assests/images/3-dot.svg" alt="img" class="img-fluid dot3-icon">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Refer a Friend</a></li>
+                                <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- wrapper start -->
+        <div class="wrapper">
+            <!-- left side bar start -->
+            <div class="left-sidebar">
+                <ul class="main-left-menu">
+                    <li><a href="index.html" ><img src="assests/images/dashboard-fill.svg" alt="img" class="img-fluid"> <span>Dashboard</span></a></li>
+                    <li><a href="calender.html" ><img src="assests/images/calendar-fill.svg" alt="img" class="img-fluid"> <span>Calender</span></a></li>
+                    <li><a href="Deals.html"><img src="assests/images/service-fill.svg" alt="img" class="img-fluid"> <span>Deals</span></a></li>
+                    <li><a href=""><img src="assests/images/message-3-fill.svg" alt="img" class="img-fluid"> <span>Messages</span></a></li>
+                    <li><a href="Contact.html" class="active"><img src="assests/images/contacts-book.svg" alt="img" class="img-fluid"> <span>Contacts</span></a></li>
+                    <li><a href=""><img src="assests/images/bar-chart-2.svg" alt="img" class="img-fluid"> <span>Reports</span></a></li>
+                    <li><a href=""><img src="assests/images/settings.svg" alt="img" class="img-fluid"> <span>Settings</span></a></li>
+                </ul>
+                <div class="menu-bottom">
+                    <a href=""><img src="assests/images/question.svg" alt="img" class="img-fluid"> <span>Help Center</span></a>
+                </div>
+            </div>
+            <!-- left side bar end -->
+            <!-- ==============================================
+            main content area start
+            ============================================== -->
+            <div class="main-content">
+                <!-- contacts page start -->
+                <div class="contacts-wrapper">
+                    <!-- contact-top start -->
+                    <div class="contact-top">
+                        <!-- row start -->
+                        <div class="row">
+                            <!-- single item start -->
+                            <div class="col-lg-5 align-self-center">
+                                <div class="item-left">
+                                    <form>
+                                        <input type="search" id="search" class="form-control" placeholder="Search">
+                                        <button type="submit"><img src="assests/images/search.svg" alt="img" class="img-fluid"></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- single item end -->
+                            <!-- single item start -->
+                            <div class="col-lg-7 align-self-center">
+                                <div class="item-right-multi-select">
+                                    <ul class="d-flex justify-content-end">
+                                        <li><button><span>3 Contacts Selected</span></button></li>
+                                        <li><button type="button" class="Select-All">Select All Contacts</button></li>
+                                        <li><button type="button"><img src="assests/images/delete-bin.svg" alt="img" class="img-fluid"><span>Delete</span></button></li>
+                                        <li><button type="button"><img src="assests/images/price-tag.svg" alt="img" class="img-fluid"><span>Manage</span> Tags</button></li>
+                                        <li><button type="button"><img src="assests/images/download-fill.svg" alt="img" class="img-fluid"><span>Export to CSV</span></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- single item end -->
+                            
+                        </div>
+                        <!-- row end -->
+                    </div>
+                    <!-- contact-top end -->
+                    
+                    <!-- table area start -->
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="allcb" checked>
+                                            
+                                        </div>
+                                    </th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col" class="text-center">Agent</th>
+                                    <th scope="col">Tags</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" checked type="checkbox" value="" id="flexCheckDefault">
+                                            
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="box-text  d-inline-block" style="background: #F8AE37;"><span class="d-inline-block">MW</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">9898989898</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            <img src="assests/images/user2.svg" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" checked type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">9898989898</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            <img src="assests/images/user2.svg" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" checked type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">9898989898</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            <img src="assests/images/user2.svg" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">9898989898</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            <img src="assests/images/user2.svg" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">---</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            ---
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">9898989898</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            <img src="assests/images/user2.svg" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">9898989898</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            <img src="assests/images/user2.svg" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">9898989898</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            <img src="assests/images/user2.svg" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">9898989898</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            <img src="assests/images/user2.svg" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">---</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            ---
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                                <!-- single item start -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="box-text d-inline-block"><span class="d-inline-block">PA</span></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">Perle & Mark</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><span class="top-p d-block">Iris Watson P.O. Box 283 8562 Fusce Rd.</span>
+                                        <span class="bottom-p d-block">Frederick Nebraska 20620</span></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="mailto: perleabercombie@gmail.com">perleabercombie@gmail.com</a></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p><a href="tel:9898989898">9898989898</a></p>
+                                    </td>
+                                    <td>
+                                        <div class="agent-img">
+                                            <img src="assests/images/user2.svg" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">VIP</a></li>
+                                            <li><a href="">Post Seller</a></li>
+                                            <li><a href="">Seller</a></li>
+                                            <li><a href="">Active</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- singl eitem end -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table area end -->
+                </div>
+                <!-- contacts page end -->
+            </div>
+            <!-- ==============================================
+            main-content area end
+            ============================================== -->
+        </div>
+        <!-- wrapper start -->
+        <!--  jQuery js-->
+        <script src="assests/js/jquery.min.js"></script>
+        <!-- bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!-- slick slider js cdn link -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- fontawesome icon -->
+        <script src="assests/fontawesome/js/all.js"></script>
+        <!-- coustom js -->
+        <script src="assests/js/script.js"></script>
+        <script>
+        
+        $('#allcb').change(function () {
+        $('tbody tr td input[type="checkbox"]').prop('checked', $(this).prop('checked'));
+        });
+        $(document).ready(function(){
+        $('.Birthdays ul li').click(function(){
+        $('.Birthdays ul li').removeClass("active");
+        $(this).addClass("active");
+        });
+        $('.Anniversaries ul li').click(function(){
+        $('.Anniversaries ul li').removeClass("active");
+        $(this).addClass("active");
+        });
+        
+        });
+        </script>
+    </body>
+</html>
